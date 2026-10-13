@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>Sign In | Olive &amp; Thyme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="signin-card" id="signin-view" aria-labelledby="signin-title">
+            <p class="eyebrow">OLIVE &amp; THYME</p>
+            <h1 id="signin-title">Welcome to the table</h1>
+            <p class="intro">Sign in to explore our kitchen's favorites.</p>
+            <form id="signin-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Enter your password" required>
+
+                <button type="submit">Sign in to view the menu</button>
+            </form>
+        </section>
+
+        <section id="menu-view" class="menu" aria-labelledby="menu-title" hidden>
+            <header class="menu-header">
+                <p class="eyebrow">FRESH FROM OUR KITCHEN</p>
+                <h1 id="menu-title" tabindex="-1">Olive &amp; Thyme</h1>
+                <p class="intro">Seasonal ingredients, thoughtfully prepared.</p>
+            </header>
+
+            <section class="menu-category" aria-labelledby="starters-title">
+                <h2 id="starters-title">To start</h2>
+                <article class="menu-item">
+                    <div><h3>Whipped feta</h3><p>Warm flatbread, honey, cracked pepper</p></div>
+                    <span>$12</span>
+                </article>
+                <article class="menu-item">
+                    <div><h3>Garden tomato salad</h3><p>Heirloom tomatoes, basil, toasted sourdough</p></div>
+                    <span>$14</span>
+                </article>
+            </section>
+
+            <section class="menu-category" aria-labelledby="mains-title">
+                <h2 id="mains-title">From the kitchen</h2>
+                <article class="menu-item">
+                    <div><h3>Lemon herb roast chicken</h3><p>Pan jus, crispy potatoes, market greens</p></div>
+                    <span>$26</span>
+                </article>
+                <article class="menu-item">
+                    <div><h3>Wild mushroom pasta</h3><p>Tagliatelle, parmesan, thyme cream</p></div>
+                    <span>$23</span>
+                </article>
+                <article class="menu-item">
+                    <div><h3>Roasted vegetable bowl</h3><p>Farro, seasonal vegetables, green tahini</p></div>
+                    <span>$19</span>
+                </article>
+            </section>
+
+            <section class="menu-category" aria-labelledby="desserts-title">
+                <h2 id="desserts-title">Something sweet</h2>
+                <article class="menu-item">
+                    <div><h3>Olive oil cake</h3><p>Whipped mascarpone, fresh berries</p></div>
+                    <span>$10</span>
+                </article>
+            </section>
+
+            <button class="signout-button" id="signout-button" type="button">Back to sign in</button>
+        </section>
+    </main>
+    <script src="javs.js"></script>
+</body>
+</html>

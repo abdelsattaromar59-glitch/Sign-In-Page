@@ -1,0 +1,204 @@
+:root {
+    color-scheme: light;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #292a22;
+    background: #f8f5ef;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(ellipse at 10% 10%, rgba(222, 231, 211, 0.55), transparent 35%),
+        #f8f5ef;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.page-shell {
+    width: min(100% - 32px, 760px);
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+.signin-card,
+.menu {
+    padding: clamp(28px, 6vw, 56px);
+    border: 1px solid #e8e2d7;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 18px 55px rgba(54, 48, 34, 0.08);
+}
+
+.signin-card {
+    width: min(100%, 500px);
+    margin: 6vh auto 0;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #6e7b4f;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: clamp(2rem, 6vw, 3.1rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.intro {
+    margin-bottom: 30px;
+    color: #77776e;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d9d6cc;
+    border-radius: 8px;
+    background: #fff;
+    color: inherit;
+    font: 1rem Arial, sans-serif;
+}
+
+input:focus {
+    border-color: #788458;
+    outline: 3px solid rgba(120, 132, 88, 0.18);
+}
+
+button {
+    min-height: 48px;
+    border: 0;
+    border-radius: 8px;
+    background: #596541;
+    color: white;
+    cursor: pointer;
+    font: 700 0.95rem Arial, sans-serif;
+    transition: background-color 150ms ease;
+}
+
+form button {
+    margin-top: 14px;
+}
+
+button:hover {
+    background: #414c30;
+}
+
+button:focus-visible {
+    outline: 3px solid #a8b38a;
+    outline-offset: 3px;
+}
+
+.menu-header {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e2d7;
+    text-align: center;
+}
+
+.menu-header .intro {
+    margin-bottom: 0;
+}
+
+.menu-category {
+    padding-top: 26px;
+}
+
+.menu-category h2 {
+    margin-bottom: 8px;
+    color: #596541;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eeeae2;
+}
+
+.menu-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.08rem;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+    color: #77776e;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.menu-item > span {
+    flex: 0 0 auto;
+    color: #596541;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+.signout-button {
+    display: block;
+    margin: 32px auto 0;
+    padding: 0 24px;
+    background: transparent;
+    color: #596541;
+    border: 1px solid #cbd0bf;
+}
+
+.signout-button:hover {
+    background: #f1f3ec;
+    color: #414c30;
+}
+
+@media (max-width: 480px) {
+    .page-shell {
+        width: min(100% - 20px, 760px);
+        padding: 24px 0;
+    }
+
+    .signin-card,
+    .menu {
+        padding: 28px 22px;
+    }
+
+    .signin-card {
+        margin-top: 4vh;
+    }
+}
